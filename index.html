@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>猪尾 実績まとめ</title>
+<meta name="description" content="ホームページ制作・業務ツール・動画と音の編集の実績をまとめた1ページです。">
+<!-- 検索に出すかは公開時に決める（出す場合はこの行を削除） -->
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --bg:#fafaf8; --surface:#ffffff; --ink:#151515; --muted:#5d5d5a; --line:#e3e2dd;
+    --accent:#1f4e79; --accent-soft:#e9f0f7; --warn:#8a5a00; --warn-soft:#fff6e0;
+    --mock-bg:#f3f4f6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141414; --surface:#1d1d1d; --ink:#ececea; --muted:#a6a6a1; --line:#333331;
+      --accent:#8bb8e8; --accent-soft:#1f2a36; --warn:#f0c46a; --warn-soft:#2e2615;
+      --mock-bg:#262626;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141414; --surface:#1d1d1d; --ink:#ececea; --muted:#a6a6a1; --line:#333331;
+    --accent:#8bb8e8; --accent-soft:#1f2a36; --warn:#f0c46a; --warn-soft:#2e2615;
+    --mock-bg:#262626;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    line-height:1.8;font-size:16px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px 64px}
+  a{color:var(--accent)}
+  header{display:flex;gap:20px;align-items:center;padding:40px 0 24px;border-bottom:1px solid var(--line)}
+  .logo{width:88px;height:88px;flex:none;border-radius:50%;background:#fff}
+  h1{font-size:26px;line-height:1.3;margin:0 0 6px;letter-spacing:.02em}
+  .lead{margin:0;color:var(--muted);font-size:15px}
+  .rules{margin:24px 0 8px;padding:16px 18px;background:var(--accent-soft);border-radius:10px;font-size:15px}
+  .rules strong{display:block;margin-bottom:4px}
+  .rules ul{margin:0;padding-left:1.2em}
+  h2{font-size:20px;margin:48px 0 4px;letter-spacing:.02em}
+  .sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px;margin:14px 0}
+  .card h3{font-size:17px;margin:0 0 4px;line-height:1.5}
+  .tag{display:inline-block;font-size:12px;line-height:1.6;padding:1px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--muted);margin:0 4px 6px 0;white-space:nowrap}
+  .tag.state{border-color:var(--accent);color:var(--accent)}
+  .card p{margin:6px 0}
+  .card ul{margin:6px 0;padding-left:1.2em}
+  .note{font-size:13px;color:var(--muted)}
+  /* 見本画面 */
+  .mock{margin:12px 0 4px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--mock-bg);font-size:13px}
+  .mock .bar{display:flex;gap:6px;align-items:center;padding:7px 10px;border-bottom:1px solid var(--line);background:var(--surface)}
+  .mock .dot{width:8px;height:8px;border-radius:50%;background:var(--line)}
+  .mock .ttl{margin-left:6px;color:var(--muted);font-size:12px}
+  .mock .body{padding:10px;overflow-x:auto}
+  .mock table{border-collapse:collapse;width:100%;table-layout:fixed;background:var(--surface)}
+  .mock th,.mock td{border:1px solid var(--line);padding:5px 2px;text-align:center;font-size:12px;overflow-wrap:anywhere}
+  .mock th{font-weight:600;color:var(--muted);font-size:12px}
+  .mock .on{background:var(--accent-soft);color:var(--accent)}
+  .mock .list{display:grid;gap:6px}
+  .mock .row{display:flex;gap:8px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+  .mock .src{flex:none;font-size:11px;padding:0 6px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+  .mock .due{margin-left:auto;flex:none;font-size:11px;color:var(--warn)}
+  .mock .kpi{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+  .mock .kpi div{flex:1 1 120px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
+  .mock .kpi b{display:block;font-size:16px}
+  .mockcap{font-size:12px;color:var(--muted);margin:2px 0 10px}
+  .links{display:grid;gap:10px;grid-template-columns:1fr}
+  @media (min-width:600px){.links{grid-template-columns:1fr 1fr}}
+  .links a{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--ink)}
+  .links a span{display:block;font-size:12px;color:var(--muted)}
+  .links a:hover{border-color:var(--accent)}
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  @media (max-width:480px){
+    header{flex-direction:column;align-items:flex-start;padding-top:28px}
+    h1{font-size:23px}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <svg class="logo" viewBox="0 0 1000 1000" role="img" aria-label="SI. WEB・AI・SOUND のロゴ">
+    <rect width="1000" height="1000" fill="#FFFFFF"/>
+    <circle cx="500" cy="500" r="470" fill="#FFFFFF" stroke="#111111" stroke-width="9"/>
+    <circle cx="500" cy="500" r="410" fill="none" stroke="#111111" stroke-width="3.5"/>
+    <text x="500" y="520" text-anchor="middle" font-size="190" font-weight="600" fill="#111111" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">SI.</text>
+    <text x="500" y="635" text-anchor="middle" font-size="44" fill="#111111" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" letter-spacing="14">WEB · AI · SOUND</text>
+  </svg>
+  <div>
+    <h1>猪尾 の実績まとめ</h1>
+    <p class="lead">ホームページ制作、業務ツールの開発、動画と音の編集をしています。AIを道具として使い、仕上がりは私が確認してからお渡しします。</p>
+  </div>
+</header>
+
+<div class="rules">
+  <strong>やり取りについて</strong>
+  <ul>
+    <li>やり取りはすべて文章（各サービスのメッセージ）でお願いしています。電話・オンライン会議・対面の打ち合わせはしていません。</li>
+    <li>対応は平日の夜と週末が中心です。</li>
+    <li>このページの画面画像は、実物とは細部が異なる見本です（架空のデータで作っています。実際のデータは載せていません）。</li>
+  </ul>
+</div>
+
+<!-- ① ホームページ -->
+<h2>ホームページ制作</h2>
+<p class="sub">作って終わりにせず、公開後の更新まで続けているものを載せています。</p>
+
+<div class="card">
+  <span class="tag state">制作・毎週更新</span><span class="tag">Astro</span><span class="tag">スマホ対応</span>
+  <h3>チアダンス教室の公式サイト（sakaicheer.com）</h3>
+  <p>教室の公式サイトを私が制作し、いまも毎週更新しています。お知らせ・クラス案内・体験申込などのページがあり、更新のたびにスマホとパソコンの表示を確認してから公開しています。</p>
+  <p><a href="https://sakaicheer.com/" rel="noopener">sakaicheer.com を見る</a></p>
+</div>
+
+<div class="card">
+  <span class="tag state">制作・納品済み</span><span class="tag">14ページ</span>
+  <h3>紹介サイト（ご依頼による制作）</h3>
+  <p>ご依頼を受けて、14ページの紹介サイトを制作・納品しました。パソコンとスマホの両方で全ページを確認してからお渡ししています。</p>
+  <p class="note">ご依頼主のお名前とURLは載せていません。</p>
+</div>
+
+<!-- ② 業務ツール -->
+<h2>業務ツール</h2>
+<p class="sub">日々の業務を少しでも楽にするための仕組みです。画面はすべて見本のデータです。</p>
+
+<div class="card">
+  <span class="tag state">使い始めに向けて改良中</span><span class="tag">Webアプリ</span><span class="tag">Next.js</span><span class="tag">Supabase</span>
+  <h3>シフト管理アプリ</h3>
+  <p>教室スタッフのシフトを、スマホから確認・提出できるWebアプリです。使い始めに向けて、項目の追加・画面の修正・見られる範囲の調整を続けています。</p>
+  <div class="mock" aria-label="シフト管理アプリの見本画面">
+    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="ttl">シフト表（見本）</span></div>
+    <div class="body">
+      <table>
+        <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+        <tr><th>Aさん</th><td class="on">17-20</td><td></td><td class="on">17-20</td><td></td><td></td><td class="on">9-12</td></tr>
+        <tr><th>Bさん</th><td></td><td class="on">16-19</td><td></td><td class="on">16-19</td><td></td><td class="on">13-17</td></tr>
+        <tr><th>Cさん</th><td class="on">17-20</td><td></td><td></td><td></td><td class="on">17-20</td><td></td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="mockcap">実物とは細部が異なる見本です（架空データ）。名前・時間も架空のものです。</p>
+</div>
+
+<div class="card">
+  <span class="tag state">受託で開発中</span><span class="tag">打刻・申請・承認・月の締め</span>
+  <h3>勤怠管理ツール</h3>
+  <p>ご依頼を受けて、打刻・訂正の申請・承認・月の締めができる勤怠管理ツールを開発しています。いまは本番で使い始める前の段階で、点検と修正を重ねています。</p>
+  <div class="mock" aria-label="勤怠管理ツールの見本画面">
+    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="ttl">今月の勤怠（見本）</span></div>
+    <div class="body">
+      <div class="kpi">
+        <div>出勤日数<b>12日</b></div>
+        <div>承認待ちの申請<b>2件</b></div>
+        <div>締め<b>未</b></div>
+      </div>
+      <table>
+        <tr><th>日付</th><th>出勤</th><th>退勤</th><th>状態</th></tr>
+        <tr><td>10/1</td><td>9:00</td><td>18:00</td><td>確定</td></tr>
+        <tr><td>10/2</td><td>9:05</td><td>18:10</td><td class="on">訂正申請中</td></tr>
+        <tr><td>10/3</td><td>9:00</td><td>17:30</td><td>確定</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="mockcap">実物とは細部が異なる見本です（架空データ）。ご依頼主のお名前・実データは載せていません。</p>
+</div>
+
+<div class="card">
+  <span class="tag state">日々の業務で使用</span><span class="tag">AI活用</span>
+  <h3>メール・LINEの「やること」拾い出し</h3>
+  <p>届いたメールとLINEから、返事が要るもの・期限があるものを拾い出して一覧にする仕組みです。私自身が日々の業務で使っています。返信や送信は自動ではせず、必ず私が確認してから行います。</p>
+  <div class="mock" aria-label="拾い出しの見本画面">
+    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="ttl">今日の拾い出し（見本）</span></div>
+    <div class="body">
+      <div class="list">
+        <div class="row"><span class="src">メール</span><span>見積もりの確認依頼に返事をする</span><span class="due">明日まで</span></div>
+        <div class="row"><span class="src">LINE</span><span>来週の練習日程の変更を連絡する</span><span class="due">今週中</span></div>
+        <div class="row"><span class="src">メール</span><span>書類の控えを保存する</span><span class="due">期限なし</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="mockcap">実物とは細部が異なる見本です（架空データ）。</p>
+</div>
+
+<!-- ③ 動画・音 -->
+<h2>動画・音の編集</h2>
+<p class="sub">大学1年から、動画と音楽の編集を続けています。</p>
+
+<div class="card">
+  <span class="tag state">継続中</span><span class="tag">音源編集</span>
+  <h3>演技曲の編集</h3>
+  <p>大会・発表会で使う曲の編集をしています。曲のつなぎ、頭と終わりのカット、フェード、曲ごとの音量そろえ、決められた秒数への収め込みなどです。</p>
+</div>
+
+<div class="card">
+  <span class="tag state">制作・納品済み</span><span class="tag">BGM</span>
+  <h3>BGMの制作</h3>
+  <p>ご依頼を受けて、BGMを制作・納品しました（施術中に流す60分のつなぎ合わせなど）。</p>
+  <p class="note">ご依頼主のお名前は載せていません。</p>
+</div>
+
+<!-- ④ 依頼先 -->
+<h2>ご依頼・ご相談</h2>
+<p class="sub">下のサービスのメッセージからお送りください（文章のみで対応します）。</p>
+
+<div class="links">
+  <a href="https://coconala.com/services/4456897" rel="noopener">小さな教室・団体のホームページを制作します<span>ココナラ</span></a>
+  <a href="https://coconala.com/services/4456064" rel="noopener">AIの安全な初期設定と仕事用の頼み方10本作ります<span>ココナラ</span></a>
+  <a href="https://coconala.com/services/4396807" rel="noopener">チア・ダンスの演技曲を規定の秒数にまとめます<span>ココナラ</span></a>
+  <a href="https://www.lancers.jp/menu/detail/1349433" rel="noopener">小さな教室・スクール・団体のホームページを、スマホ対応で制作します<span>ランサーズ</span></a>
+  <a href="https://www.lancers.jp/menu/detail/1349432" rel="noopener">ChatGPT・Claudeの業務用の指示書と、安全な使い方ルールを作ります<span>ランサーズ</span></a>
+  <a href="https://www.lancers.jp/menu/detail/1349434" rel="noopener">チア・ダンスの演技曲やBGMを、規定の秒数に合わせて編集・つなぎします<span>ランサーズ</span></a>
+</div>
+
+<footer>
+  <p>猪尾（大阪府堺市）／Webサイト・業務ツール・音の編集。作業にはAIを道具として使い、仕上がりは私が確認してお渡しします。成果（売上・集客数など）のお約束はしていません。</p>
+</footer>
+
+</div>
+</body>
+</html>
